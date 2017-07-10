@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="handlebars-v4.0.10.js"></script>
+    <script type="text/javascript" src="ajaxGet.js"></script>
+</head>
+<body>
+<script id="entry-template" type="text/x-handlebars-template">
+  <div class="entry">
+    <ul>
+    	{{#each data}}
+    	    <li>
+    	    	{{this.id}}
+    	    	{{this.name}}
+    	    	({{this.address}})
+    	    	<br>
+    	    	{{this.information}}
+    	    </li>
+    	{{/each}}
+    </ul>
+  </div>
+</script>
+</body>
+</html>
